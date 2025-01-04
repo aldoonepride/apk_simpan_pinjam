@@ -1,0 +1,111 @@
+<div class="content">
+    <h2>Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan atau butuh bantuan, silakan hubungi kami melalui form berikut:</p>
+    <form class="contact-form">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email Anda">
+        
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda"></textarea>
+        
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</div>
+
+<style>
+    /* Latar belakang biru untuk halaman */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #007bff; /* Warna latar belakang biru */
+        color: white;
+    }
+
+    .content {
+        background-color: rgba(255, 255, 255, 0.9); /* Latar belakang konten semi-transparan */
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Bayangan konten */
+    }
+
+    h2 {
+        text-align: center;
+        color: #0056b3; /* Biru gelap untuk judul */
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Form Kontak */
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #0056b3; /* Biru gelap untuk label */
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #007bff; /* Border biru saat fokus */
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745; /* Tombol hijau */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+        background-color: #218838; /* Warna tombol saat hover */
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+</style>

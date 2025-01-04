@@ -1,0 +1,109 @@
+<div class="content">
+    <h2>Dashboard</h2>
+    <p>Selamat datang di Dashboard Aplikasi Simpan Pinjam! Di sini Anda bisa melihat ringkasan aktivitas simpanan, pinjaman, dan laporan keuangan.</p>
+    <div class="dashboard-widgets">
+        <div class="widget">
+            <h3>Total Simpanan</h3>
+            <p>Rp 8.500.000</p>
+        </div>
+        <div class="widget">
+            <h3>Total Pinjaman</h3>
+            <p>Rp 15.000.000</p>
+        </div>
+        <div class="widget">
+            <h3>Total Laporan Keuangan</h3>
+            <p>3 Laporan</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Menambahkan latar belakang biru pada halaman */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #007bff; /* Warna latar belakang biru */
+        color: white; /* Warna teks putih untuk kontras */
+    }
+
+    .content {
+        background-color: rgba(255, 255, 255, 0.9); /* Latar belakang konten semi-transparan */
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Bayangan konten */
+    }
+
+    h2 {
+        text-align: center;
+        color: #0056b3; /* Biru gelap untuk judul */
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Layout dan Desain Widget Dashboard */
+    .dashboard-widgets {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .widget {
+        width: 30%;
+        padding: 20px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan pada widget */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat hover */
+    }
+
+    .widget h3 {
+        margin: 0 0 10px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .widget p {
+        font-size: 1.8em;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .widget:hover {
+        transform: translateY(-5px); /* Efek hover mengangkat sedikit widget */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+    }
+
+    /* Warna berbeda untuk setiap widget */
+    .widget:nth-child(2) {
+        background-color: #28a745;
+    }
+
+    .widget:nth-child(3) {
+        background-color: #ffc107;
+        color: black; /* Teks hitam untuk kontras dengan latar kuning */
+    }
+
+    /* Responsif untuk layar lebih kecil */
+    @media (max-width: 768px) {
+        .dashboard-widgets {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .widget {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+</style>

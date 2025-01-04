@@ -1,0 +1,146 @@
+<div class="content">
+    <h2>Simpanan</h2>
+    <p>Kelola simpanan Anda di sini. Anda dapat menambahkan, mengedit, dan melihat riwayat simpanan Anda.</p>
+    <div class="simpanan-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Jenis Simpanan</th>
+                    <th>Jumlah</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>01/01/2025</td>
+                    <td>Simpanan Wajib</td>
+                    <td>Rp 500.000</td>
+                    <td><button>Detail</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>10/01/2025</td>
+                    <td>Simpanan Sukarela</td>
+                    <td>Rp 300.000</td>
+                    <td><button>Detail</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    /* Mengatur latar belakang halaman menjadi biru */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #007bff; /* Latar belakang biru */
+        background-size: cover;
+        background-position: center;
+        color: white; /* Warna teks default putih untuk kontras */
+    }
+
+    .content {
+        background-color: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan putih */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Bayangan konten */
+        max-width: 900px;
+        margin: 50px auto;
+        color: black; /* Warna teks hitam di dalam konten */
+    }
+
+    h2 {
+        text-align: center;
+        color: #0056b3; /* Warna judul biru yang lebih gelap */
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 24px; /* Ukuran font yang lebih besar */
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .simpanan-table {
+        margin-top: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white; /* Latar belakang tabel putih */
+        color: black; /* Teks tabel hitam */
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan pada tabel */
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 15px; /* Padding lebih besar untuk ruang lebih luas */
+        text-align: left;
+    }
+
+    th {
+        background-color: #0056b3; /* Biru gelap pada header tabel */
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9; /* Warna berbeda untuk baris genap */
+    }
+
+    tr:hover {
+        background-color: #f1f1f1; /* Efek hover pada baris */
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #28a745; /* Tombol hijau */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
+    }
+
+    button:hover {
+        background-color: #218838; /* Efek hover tombol */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+    }
+
+    /* Media query untuk tampilan yang lebih kecil */
+    @media (max-width: 768px) {
+        table, th, td {
+            font-size: 12px; /* Ukuran font lebih kecil */
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size: 12px; /* Tombol lebih kecil */
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+        }
+    }
+</style>

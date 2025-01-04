@@ -1,0 +1,98 @@
+<div class="content">
+<h2>Laporan Keuangan</h2>
+<p>Berikut adalah laporan keuangan Anda yang mencakup total simpanan, pinjaman, dan cicilan yang telah dibayar.</p>
+<div class="laporan-widgets">
+    <div class="widget">
+        <h3>Total Simpanan</h3>
+        <p>Rp 8.500.000</p>
+    </div>
+    <div class="widget">
+        <h3>Total Pinjaman</h3>
+        <p>Rp 15.000.000</p>
+    </div>
+    <div class="widget">
+        <h3>Cicilan yang Telah Dibayar</h3>
+        <p>Rp 3.500.000</p>
+    </div>
+</div>
+<div class="laporan-table">
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Jenis Transaksi</th>
+                <th>Jumlah</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>01/01/2025</td>
+                <td>Simpanan</td>
+                <td>Rp 500.000</td>
+                <td>Selesai</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>05/01/2025</td>
+                <td>Pinjaman</td>
+                <td>Rp 1.000.000</td>
+                <td>Dalam Proses</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<style>
+    .laporan-widgets {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .widget {
+        width: 30%;
+        padding: 20px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .widget:nth-child(2) {
+        background-color: #28a745;
+    }
+    .widget:nth-child(3) {
+        background-color: #ffc107;
+    }
+    .widget h3 {
+        margin: 0 0 10px;
+        font-size: 1.2em;
+    }
+    .widget p {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .laporan-table {
+        margin-top: 30px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #17a2b8;
+        color: white;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+</style>
+</div>

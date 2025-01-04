@@ -1,0 +1,144 @@
+<div class="content">
+    <h2>Pinjaman</h2>
+    <p>Kelola pinjaman Anda di sini. Anda dapat mengajukan pinjaman baru, melihat status pinjaman, dan riwayat pembayaran cicilan.</p>
+    <div class="pinjaman-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Jumlah Pinjaman</th>
+                    <th>Bunga</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>01/01/2025</td>
+                    <td>Rp 5.000.000</td>
+                    <td>5%</td>
+                    <td>Dalam Proses</td>
+                    <td><button>Detail</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>15/02/2025</td>
+                    <td>Rp 10.000.000</td>
+                    <td>7%</td>
+                    <td>Disetujui</td>
+                    <td><button>Detail</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    /* Menambahkan latar belakang biru */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #007bff; /* Latar belakang biru */
+        color: white;
+    }
+
+    .content {
+        background-color: rgba(255, 255, 255, 0.9); /* Latar belakang konten semi-transparan */
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 50px auto;
+        color: black; /* Warna teks hitam di dalam konten */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Bayangan konten */
+    }
+
+    h2 {
+        text-align: center;
+        color: #0056b3; /* Biru gelap untuk judul */
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .pinjaman-table {
+        margin-top: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white; /* Latar belakang tabel putih */
+        color: black;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan pada tabel */
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 15px; /* Padding lebih besar untuk tampilan yang lebih baik */
+        text-align: left;
+    }
+
+    th {
+        background-color: #0056b3; /* Biru gelap untuk header tabel */
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9; /* Baris genap dengan warna berbeda */
+    }
+
+    tr:hover {
+        background-color: #f1f1f1; /* Efek hover pada baris tabel */
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #28a745; /* Warna tombol hijau */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Bayangan tombol */
+    }
+
+    button:hover {
+        background-color: #218838; /* Efek hover tombol */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+    }
+
+    /* Media query untuk tampilan yang lebih kecil */
+    @media (max-width: 768px) {
+        table, th, td {
+            font-size: 12px; /* Ukuran font lebih kecil */
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size: 12px; /* Tombol lebih kecil */
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+        }
+    }
+</style>

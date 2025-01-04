@@ -1,0 +1,110 @@
+<div class="content">
+    <h2>Home</h2>
+    <p>Selamat datang di halaman utama Aplikasi Simpan Pinjam. Di sini, Anda bisa mengelola simpanan, pinjaman, dan melihat laporan keuangan dengan mudah.</p>
+    <div class="home-sections">
+        <div class="section kelola-simpanan">
+            <h3>Kelola Simpanan</h3>
+            <p>Atur dan cek saldo simpanan Anda dengan mudah dan cepat.</p>
+        </div>
+        <div class="section ajukan-pinjaman">
+            <h3>Ajukan Pinjaman</h3>
+            <p>Ajukan pinjaman dengan bunga rendah dan proses yang cepat.</p>
+        </div>
+        <div class="section laporan-keuangan">
+            <h3>Laporan Keuangan</h3>
+            <p>Lihat laporan keuangan Anda secara real-time.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Background biru untuk halaman */
+    body {
+        background-color: #007bff; /* Biru */
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan */
+        border-radius: 10px;
+        margin: 40px auto;
+        max-width: 1200px;
+    }
+
+    .home-sections {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .section {
+        width: 30%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        color: white;
+    }
+
+    .section h3 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .kelola-simpanan {
+        background-color: #28a745; /* Hijau untuk bagian simpanan */
+    }
+
+    .ajukan-pinjaman {
+        background-color: #ffc107; /* Kuning untuk bagian pinjaman */
+        color: black;
+    }
+
+    .laporan-keuangan {
+        background-color: #17a2b8; /* Biru muda untuk laporan keuangan */
+    }
+
+    /* Efek hover */
+    .section:hover {
+        transform: scale(1.05); /* Sedikit membesar saat hover */
+        background-color: #495057; /* Biru gelap saat hover */
+    }
+
+    .section:hover.kelola-simpanan {
+        background-color: #218838;
+    }
+
+    .section:hover.ajukan-pinjaman {
+        background-color: #e0a800;
+    }
+
+    .section:hover.laporan-keuangan {
+        background-color: #138496;
+    }
+
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+        .home-sections {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            width: 80%; /* Lebih besar di perangkat kecil */
+            margin-bottom: 20px;
+        }
+    }
+</style>

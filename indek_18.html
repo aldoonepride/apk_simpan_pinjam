@@ -1,0 +1,70 @@
+<div class="content">
+<h2>Data Transaksi</h2>
+<p>Berikut adalah daftar transaksi yang tercatat dalam sistem simpan pinjam.</p>
+<div class="transaksi-table">
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Jenis Transaksi</th>
+                <th>Jumlah</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>01/01/2025</td>
+                <td>Simpanan</td>
+                <td>Rp 500.000</td>
+                <td>Selesai</td>
+                <td><button>Detail</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>05/01/2025</td>
+                <td>Pinjaman</td>
+                <td>Rp 1.000.000</td>
+                <td>Dalam Proses</td>
+                <td><button>Detail</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<style>
+    .transaksi-table {
+        margin-top: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #28a745;
+        color: white;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</div>
